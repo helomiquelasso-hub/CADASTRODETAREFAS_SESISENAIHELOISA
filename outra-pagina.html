@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐐uem 𝓮u 𝓼ou?‹𝟹</title>
+    <link rel="stylesheet" href="outra-pagina.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glitter"></div>
+    <main class="pagina">
+        <div id="relogio"></div>
+        <div class="glitter"></div>
+        <section class="secao">
+          <h1>⋆｡˚꒰ঌ𝐐uem 𝓮u 𝓼ou?໒꒱˚｡⋆</h1>
+            <img
+                src="minhafoto.jpg"
+                alt="Minha foto"
+                class="foto-perfil"
+            >
+            <div class="caixa-texto">
+                <p>
+                    Meu nome é Luiza (MAS, gosto que me chamem por Ziza), atualmente eu estou no segundo
+                    ano do ensino médio técnico em Desenvolvimento de Sistema, e sou aluna do Prof.Marcelo
+                </p>
+            </div>
+        </section>
+        <div class="linha"></div>
+
+        <section class="secao">
+
+            <h2>
+                ‧˚꒰❔୭˚𝐒obre o 𝐆erenciador de 𝐓arefas. ᵎᵎ
+            </h2>
+
+
+            <div class="caixa-texto">
+                <p>
+                    Este projeto foi desenvolvido como um gerenciador
+                    de tarefas em lista, permitindo adicionar, excluir
+                    e marcar tarefas como concluídas.
+                </p>
+                <p>
+                    Também personalizei o site com diferentes cores,
+                    elementos animados e um visual que combina com
+                    o meu estilo.
+                </p>
+                <a href="index.html">
+                    Voltar para o gerenciador de tarefas
+                </a>
+            </div>
+        </section>
+    </main>
+    <script>
+        function atualizarRelogio() {
+            const agora = new Date();
+            const hora = agora.toLocaleTimeString(
+                "pt-BR",
+                {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit"
+                }
+            );
+            document.getElementById("relogio").textContent = hora;
+        }
+        atualizarRelogio();
+        setInterval(atualizarRelogio, 1000);
+    </script>
+</body>
+</html>
